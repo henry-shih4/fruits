@@ -6,6 +6,7 @@ export default function Header() {
       <div className="h-10 w-full bg-blue-200 space-x-4">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/watermelon">Watermelon</NavLink>
+        <NavLink to="/orange">Orange</NavLink>
       </div>
     </>
   );
