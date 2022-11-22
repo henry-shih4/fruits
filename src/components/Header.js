@@ -21,15 +21,18 @@ export default function Header() {
   return (
     <>
       <div
-        className={`${
-          background ? background : null
-        } h-12 w-full flex justify-start items-center pl-4`}
+        id="slideIn"
+        className={`h-12 w-full flex justify-start items-center`}
       >
+        <div
+          id="sliderBg"
+          className={`${background} absolute top-0 left-0 w-full h-full -z-10`}
+        ></div>
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "h-full flex items-center p-2 bg-white text-black transition-all"
-              : "p-2 h-full flex items-center text-white"
+              ? "justify-center w-[100px] h-full flex items-center p-2 bg-white text-black transition-colors duration-500"
+              : "justify-center w-[100px]  p-2 h-full flex items-center text-white"
           }
           to="/"
         >
@@ -38,8 +41,8 @@ export default function Header() {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "h-full flex items-center p-2 bg-white text-black transition-all"
-              : "p-2 h-full flex items-center text-white"
+              ? "justify-center w-[100px] h-full flex items-center p-2 bg-white text-black transition-colors duration-500"
+              : "justify-center w-[100px]  p-2 h-full flex items-center text-white"
           }
           to="/watermelon"
         >
@@ -48,8 +51,8 @@ export default function Header() {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "h-full flex items-center p-2  bg-white text-black transition-all"
-              : "p-2 h-full flex items-center text-white"
+              ? "justify-center w-[100px] h-full flex items-center p-2  bg-white text-black transition-colors duration-500"
+              : "justify-center w-[100px] p-2 h-full flex items-center text-white"
           }
           to="/orange"
         >
@@ -58,8 +61,8 @@ export default function Header() {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "h-full flex items-center p-2 justify-center w-[80px] bg-white text-black transition-all"
-              : "p-2 h-full flex items-center text-white"
+              ? "h-full flex items-center p-2 justify-center w-[100px] bg-white text-black transition-colors duration-500"
+              : "justify-center w-[100px]  p-2 h-full flex items-center text-white"
           }
           to="/kiwi"
         >

@@ -9,10 +9,9 @@ export default function Kiwi() {
                 <div className="text-2xl">Kiwi</div>
                 <div>
                   Kiwi, (Actinidia deliciosa), also called kiwifruit or Chinese
-                  gooseberry, woody vine and edible fruit of the family
-                  Actinidiaceae. The plant is native to mainland China and
-                  Taiwan and is also grown commercially in New Zealand and
-                  California.
+                  gooseberry, is an edible fruit of the family Actinidiaceae.
+                  The plant is native to mainland China and Taiwan and is also
+                  grown commercially in New Zealand and California.
                 </div>
               </div>
             </div>
