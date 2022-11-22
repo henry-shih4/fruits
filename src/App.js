@@ -12,8 +12,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/watermelon" element={<Watermelon />}></Route>
-          <Route path="/orange" element={<Orange />}></Route>
+          <Route path="watermelon" element={<Watermelon />}></Route>
+          <Route path="orange" element={<Orange />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

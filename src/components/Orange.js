@@ -1,6 +1,10 @@
+import Header from "./Header";
 export default function Orange() {
+  const background = "bg-orange-300";
+
   return (
     <>
+      {/* <Header background={background} /> */}
       <div className="min-h-screen">
         <div className="lg:grid grid-cols-2 grid-rows-4 h-full">
           <div className="h-[300px] md:h-[360px] lg:h-full row-start-1 row-end-3 col-start-1 ">
@@ -16,9 +20,9 @@ export default function Orange() {
               </div>
             </div>
           </div>
-          <div className="min-h-[300px] p-3 row-span-2 col-start-2">
+          <div className="min-h-[300px] row-span-2 col-start-2">
             <img
-              className="h-full w-full object-cover rounded-lg"
+              className="h-full w-full object-cover"
               src="images/orange1.jpg"
             />
           </div>
@@ -47,9 +51,9 @@ export default function Orange() {
               </div>
             </div>
           </div>
-          <div className="min-h-[300px] p-3 row-start-3 row-end-5 col-start-1">
+          <div className="min-h-[300px] row-start-3 row-end-5 col-start-1">
             <img
-              className=" h-full w-full object-cover rounded-lg"
+              className=" h-full w-full object-cover"
               src="images/orange2.jpg"
             />
           </div>
