@@ -11,10 +11,12 @@ export default function Header() {
       setBackground("bg-red-300");
     } else if (location.pathname === "/orange") {
       setBackground("bg-orange-300");
+    } else if (location.pathname === "/kiwi") {
+      setBackground("bg-[#90C825]");
     } else {
       setBackground("bg-slate-300");
     }
-  });
+  }, [location.pathname]);
 
   return (
     <>
@@ -46,12 +48,22 @@ export default function Header() {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "h-full flex items-center p-2 bg-white text-black transition-all"
+              ? "h-full flex items-center p-2  bg-white text-black transition-all"
               : "p-2 h-full flex items-center text-white"
           }
           to="/orange"
         >
           Orange
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "h-full flex items-center p-2 justify-center w-[80px] bg-white text-black transition-all"
+              : "p-2 h-full flex items-center text-white"
+          }
+          to="/kiwi"
+        >
+          Kiwi
         </NavLink>
       </div>
     </>

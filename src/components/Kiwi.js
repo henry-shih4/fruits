@@ -1,6 +1,4 @@
-
-export default function Orange() {
-
+export default function Kiwi() {
   return (
     <>
       <div className="min-h-screen">
@@ -8,12 +6,13 @@ export default function Orange() {
           <div className="h-[300px] md:h-[360px] lg:h-full row-start-1 row-end-3 col-start-1 ">
             <div className="h-full w-full flex flex-col justify-center items-center">
               <div className="w-3/4 h-full flex flex-col justify-center items-center space-y-3">
-                <div className="text-2xl">Orange</div>
+                <div className="text-2xl">Kiwi</div>
                 <div>
-                  Orange, any of several species of small trees or shrubs of the
-                  genus Citrus of the family Rutaceae and their nearly round
-                  fruits, which have leathery and oily rinds and edible, juicy
-                  inner flesh
+                  Kiwi, (Actinidia deliciosa), also called kiwifruit or Chinese
+                  gooseberry, woody vine and edible fruit of the family
+                  Actinidiaceae. The plant is native to mainland China and
+                  Taiwan and is also grown commercially in New Zealand and
+                  California.
                 </div>
               </div>
             </div>
@@ -21,7 +20,7 @@ export default function Orange() {
           <div className="min-h-[300px] row-span-2 col-start-2">
             <img
               className="h-full w-full object-cover"
-              src="images/orange1.jpg"
+              src="images/kiwi1.jpg"
             />
           </div>
           <div className="row-span-2 col-start-2">
@@ -52,7 +51,7 @@ export default function Orange() {
           <div className="min-h-[300px] row-start-3 row-end-5 col-start-1">
             <img
               className=" h-full w-full object-cover"
-              src="images/orange2.jpg"
+              src="images/kiwi2.jpg"
             />
           </div>
         </div>
