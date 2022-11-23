@@ -1,7 +1,7 @@
 export default function Kiwi() {
   return (
     <>
-      <div className="min-h-screen">
+      <div className="h-screen">
         <div className="lg:grid grid-cols-2 grid-rows-4 h-full">
           <div className="h-[300px] md:h-[360px] lg:h-full row-start-1 row-end-3 col-start-1 ">
             <div className="h-full w-full flex flex-col justify-center items-center">
@@ -27,20 +27,20 @@ export default function Kiwi() {
               <div className="w-3/4 h-full flex flex-col justify-center items-center space-y-3">
                 <div className="text-2xl">Nutrition Info</div>
                 <div className="flex flex-col justify-center items-center space-y-3">
-                  <div>One cup of diced watermelon (152g)</div>
+                  <div>One medium-sized kiwi (75g)</div>
                   <div className="flex space-x-4">
                     <ul>
-                      <li>Calories: 46</li>
-                      <li>Fat: 0.2g</li>
-                      <li>Carbohydrates: 11.5g</li>
-                      <li>Sodium: 1.5mg</li>
-                      <li>Fiber: 0.6g</li>
+                      <li>Calories: 42</li>
+                      <li>Fat: 0.4g</li>
+                      <li>Carbohydrates: 10.1g</li>
+                      <li>Sodium: 3.8mg</li>
+                      <li>Fiber: 2.1g</li>
                     </ul>
                     <ul>
-                      <li>Sugars: 9.4g</li>
-                      <li>Protein: 0.9g</li>
-                      <li>Vitamin C: 12.3mg</li>
-                      <li>Vitamin A: 42.6mcg</li>
+                      <li>Sugars: 6.7g</li>
+                      <li>Protein: 0.8g</li>
+                      <li>Vitamin C: 56mg</li>
+                      <li>Potassium: 148mg</li>
                     </ul>
                   </div>
                 </div>

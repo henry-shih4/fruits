@@ -1,9 +1,7 @@
-
 export default function Orange() {
-
   return (
     <>
-      <div className="min-h-screen">
+      <div className="h-screen">
         <div className="lg:grid grid-cols-2 grid-rows-4 h-full">
           <div className="h-[300px] md:h-[360px] lg:h-full row-start-1 row-end-3 col-start-1 ">
             <div className="h-full w-full flex flex-col justify-center items-center">
@@ -29,20 +27,19 @@ export default function Orange() {
               <div className="w-3/4 h-full flex flex-col justify-center items-center space-y-3">
                 <div className="text-2xl">Nutrition Info</div>
                 <div className="flex flex-col justify-center items-center space-y-3">
-                  <div>One cup of diced watermelon (152g)</div>
+                  <div>One navel orange (140g)</div>
                   <div className="flex space-x-4">
                     <ul>
-                      <li>Calories: 46</li>
+                      <li>Calories: 73</li>
                       <li>Fat: 0.2g</li>
-                      <li>Carbohydrates: 11.5g</li>
-                      <li>Sodium: 1.5mg</li>
-                      <li>Fiber: 0.6g</li>
+                      <li>Carbohydrates: 16.5g</li>
+                      <li>Fiber: 2.8g</li>
                     </ul>
                     <ul>
-                      <li>Sugars: 9.4g</li>
-                      <li>Protein: 0.9g</li>
-                      <li>Vitamin C: 12.3mg</li>
-                      <li>Vitamin A: 42.6mcg</li>
+                      <li>Sugars: 12g</li>
+                      <li>Protein: 1.3g</li>
+                      <li>Vitamin C: 82.7mg</li>
+                      <li>Potassium: 232mg</li>
                     </ul>
                   </div>
                 </div>

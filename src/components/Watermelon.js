@@ -5,8 +5,7 @@ export default function Watermelon() {
 
   return (
     <>
-      {/* <Header background={background} /> */}
-      <div className="min-h-screen">
+      <div className="h-screen">
         <div className="lg:grid grid-cols-2 grid-rows-4 h-full">
           <div className="h-[300px] md:h-[360px] lg:h-full row-start-1 row-end-3 col-start-1 ">
             <div className="h-full w-full flex flex-col justify-center items-center">
@@ -16,6 +15,22 @@ export default function Watermelon() {
                   Watermelon, (Citrullus lanatus), succulent fruit and vinelike
                   plant of the gourd family (Cucurbitaceae), native to tropical
                   Africa and cultivated around the world.
+                </div>
+                <div className="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6 mt-5"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
                 </div>
               </div>
             </div>

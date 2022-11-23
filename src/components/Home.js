@@ -1,9 +1,9 @@
-import Header from "./Header";
 export default function Home() {
   return (
     <>
-      {/* <Header /> */}
-      <div>Home page</div>
+      <div className="h-screen">
+        <div className="h-full flex justify-center items-center">home</div>
+      </div>
     </>
   );
 }
