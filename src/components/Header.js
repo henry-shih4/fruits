@@ -13,11 +13,11 @@ export default function Header() {
 
   useEffect(() => {
     if (location.pathname === "/watermelon") {
-      setBackground("bg-red-300");
+      setBackground("bg-watermelon");
     } else if (location.pathname === "/orange") {
-      setBackground("bg-orange-300");
+      setBackground("bg-lightorange");
     } else if (location.pathname === "/kiwi") {
-      setBackground("bg-[#90C825]");
+      setBackground("bg-kiwi");
     } else {
       setBackground("bg-slate-300");
     }

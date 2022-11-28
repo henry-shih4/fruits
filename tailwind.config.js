@@ -3,6 +3,11 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      colors: {
+        watermelon: "#fca5a5",
+        lightorange: "#fdba74",
+        kiwi: "#90C825",
+      },
       keyframes: {
         slideIn: {
           "0%": {
@@ -13,24 +18,20 @@ module.exports = {
             transform: "translateX:(0)",
           },
         },
-        flash:{
+        flash: {
           "0%": {
-            opacity: "0",
-            transform:'translate(-100%)'
+            transform: "translate(-100%)",
           },
 
-          "50%": {
-            opacity:'1'
-          },
-          '100%':{
-            opacity:'0',
-            transform:'translate(100%)'
+          "50%": { transform: "translate(30%)" },
+          "100%": {
+            transform: "translate(-100%)",
           },
         },
       },
       animation: {
         backgroundSlide: "slideIn 1.2s linear",
-        flash: "flash 2s infinite",
+        flash: "flash 2.4s linear infinite",
       },
     },
   },
