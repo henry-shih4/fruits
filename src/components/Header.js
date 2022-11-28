@@ -4,11 +4,13 @@ import { NavLink, useLocation } from "react-router-dom";
 export default function Header() {
   const [background, setBackground] = useState();
   const [navAnimation, setNavAnimation] = useState(false);
+  const [showList, setShowList] = useState(false);
+  const [fruit, setFruit] = useState();
 
   let location = useLocation();
 
   useEffect(() => {
-    console.log(navAnimation);
+    console.log(showList);
   });
 
   useEffect(() => {
@@ -18,6 +20,8 @@ export default function Header() {
       setBackground("bg-lightorange");
     } else if (location.pathname === "/kiwi") {
       setBackground("bg-kiwi");
+    } else if (location.pathname === "/banana") {
+      setBackground("bg-yellow-200");
     } else {
       setBackground("bg-slate-300");
     }
@@ -87,6 +91,54 @@ export default function Header() {
           >
             Kiwi
           </NavLink>
+          <div className="relative">
+            <button
+              onClick={() => {
+                setShowList(true);
+              }}
+            >
+              {fruit ? fruit : "More"}
+            </button>
+            <div
+              className={showList ? "absolute" : "absolute hidden"}
+              onMouseLeave={() => {
+                setShowList(false);
+              }}
+            >
+              <ul>
+                <NavLink
+                  className="justify-center w-[100px] h-full flex items-center p-2  bg-white text-black transition-colors duration-500"
+                  to="/banana"
+                  onClick={() => {
+                    setNavAnimation(true);
+                    setFruit("Banana");
+                  }}
+                >
+                  Banana
+                </NavLink>
+                <NavLink
+                  className="justify-center w-[100px] h-full flex items-center p-2  bg-white text-black transition-colors duration-500"
+                  to="/strawberry"
+                  onClick={() => {
+                    setNavAnimation(true);
+                    setFruit("Strawberry");
+                  }}
+                >
+                  Strawberry
+                </NavLink>
+                <NavLink
+                  className="justify-center w-[100px] h-full flex items-center p-2  bg-white text-black transition-colors duration-500"
+                  to="/blueberry"
+                  onClick={() => {
+                    setNavAnimation(true);
+                    setFruit("Blueberry");
+                  }}
+                >
+                  Blueberry
+                </NavLink>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </>
