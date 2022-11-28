@@ -92,13 +92,40 @@ export default function Header() {
             Kiwi
           </NavLink>
           <div className="relative">
-            <button
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "justify-center w-[100px] h-full flex items-center p-2  bg-white text-black transition-colors duration-500"
+                  : "justify-center w-[100px] p-2 h-full flex items-center text-white"
+              }
               onClick={() => {
                 setShowList(true);
               }}
             >
-              {fruit ? fruit : "More"}
-            </button>
+              {fruit ? (
+                <>
+                  <div>{fruit}</div>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </div>
+                </>
+              ) : (
+                "More"
+              )}
+            </NavLink>
             <div
               className={showList ? "absolute" : "absolute hidden"}
               onMouseLeave={() => {
