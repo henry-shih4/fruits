@@ -25,12 +25,12 @@ export default function Header() {
 
   return (
     <>
-      <div className="absolute top-0 left-0 w-1/2">
-        <div className="h-12 w-full flex justify-start items-center relative z-1">
+      <div className=" h-10">
+        <div className="w-full flex justify-start items-center relative z-1">
           <div
             className={
               navAnimation
-                ? `animate-background-slide ${background} absolute top-0 left-0 w-full h-full -z-10`
+                ? `animate-backgroundSlide ${background} absolute top-0 left-0 w-full h-full -z-10`
                 : `${background} absolute top-0 left-0 w-full h-full -z-10`
             }
             onAnimationEnd={() => {

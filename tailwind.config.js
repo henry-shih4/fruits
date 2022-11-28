@@ -13,9 +13,24 @@ module.exports = {
             transform: "translateX:(0)",
           },
         },
+        flash:{
+          "0%": {
+            opacity: "0",
+            transform:'translate(-100%)'
+          },
+
+          "50%": {
+            opacity:'1'
+          },
+          '100%':{
+            opacity:'0',
+            transform:'translate(100%)'
+          },
+        },
       },
       animation: {
-        "background-slide": "slideIn 1.2s linear",
+        backgroundSlide: "slideIn 1.2s linear",
+        flash: "flash 2s infinite",
       },
     },
   },

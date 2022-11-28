@@ -1,7 +1,7 @@
 export default function Orange() {
   return (
     <>
-      <div className="h-screen">
+      <div className="h-[calc(100vh-40px)]">
         <div className="lg:grid grid-cols-2 grid-rows-4 h-full">
           <div className="h-[300px] md:h-[360px] lg:h-full row-start-1 row-end-3 col-start-1 ">
             <div className="h-full w-full flex flex-col justify-center items-center">
