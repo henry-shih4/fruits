@@ -5,7 +5,7 @@ export default function Header() {
   const [background, setBackground] = useState();
   const [navAnimation, setNavAnimation] = useState(false);
   const [showList, setShowList] = useState(false);
-  const [fruit, setFruit] = useState();
+  const [activePage, setActivePage] = useState(false);
 
   let location = useLocation();
 
@@ -27,6 +27,9 @@ export default function Header() {
     }
   }, [location.pathname]);
 
+
+const fruits = ['watermelon', 'orange', 'kiwi', 'banana', 'strawberry', 'blueberry']
+
   return (
     <>
       <div className=" h-10">
@@ -41,78 +44,36 @@ export default function Header() {
               setNavAnimation(false);
             }}
           ></div>
-          <NavLink
+           <NavLink
             className={({ isActive }) =>
               isActive
                 ? "justify-center w-[100px] h-full flex items-center p-2 bg-white text-black transition-colors duration-500"
                 : "justify-center w-[100px]  p-2 h-full flex items-center text-white"
             }
             to="/"
+            onClick={()=>{setActivePage(false)}}
           >
             Home
           </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? "justify-center w-[100px] h-full flex items-center p-2 bg-white text-black transition-colors duration-500"
-                : "justify-center w-[100px]  p-2 h-full flex items-center text-white"
-            }
-            onClick={() => {
-              setNavAnimation(true);
-            }}
-            to="/watermelon"
-          >
-            Watermelon
-          </NavLink>
-
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? "justify-center w-[100px] h-full flex items-center p-2  bg-white text-black transition-colors duration-500"
-                : "justify-center w-[100px] p-2 h-full flex items-center text-white"
-            }
-            to="/orange"
-            onClick={() => {
-              setNavAnimation(true);
-            }}
-          >
-            Orange
-          </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? "justify-center w-[100px] h-full flex items-center p-2  bg-white text-black transition-colors duration-500"
-                : "justify-center w-[100px] p-2 h-full flex items-center text-white"
-            }
-            to="/kiwi"
-            onClick={() => {
-              setNavAnimation(true);
-            }}
-          >
-            Kiwi
-          </NavLink>
           <div className="relative">
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? "justify-center w-[100px] h-full flex items-center p-2  bg-white text-black transition-colors duration-500"
-                  : "justify-center w-[100px] p-2 h-full flex items-center text-white"
-              }
+            <div
+              className= {activePage?"justify-center w-[100px] h-full flex items-center p-2  bg-white text-black transition-colors duration-500":"justify-center w-[100px]  p-2 h-full flex items-center text-white"}
               onClick={() => {
                 setShowList(true);
               }}
-            >
-              {fruit ? (
+            > 
+              {
                 <>
-                  <div>{fruit}</div>
-                  <div>
+                <div className='flex justify-center items-center space-x-1'>
+                  <div>Fruits</div>
+                  <div className='mt-1'>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="w-6 h-6"
+                      className="w-4 h-4 flex justify-center items-center"
                     >
                       <path
                         stroke-linecap="round"
@@ -121,48 +82,31 @@ export default function Header() {
                       />
                     </svg>
                   </div>
+                  </div>
                 </>
-              ) : (
-                "More"
-              )}
-            </NavLink>
+              }
+            </div>
             <div
               className={showList ? "absolute" : "absolute hidden"}
               onMouseLeave={() => {
                 setShowList(false);
               }}
+              
             >
               <ul>
-                <NavLink
-                  className="justify-center w-[100px] h-full flex items-center p-2  bg-white text-black transition-colors duration-500"
-                  to="/banana"
+                {fruits.map((fruit)=>{
+                  return(
+                  <NavLink
+                  className="z-1 justify-center w-[100px] h-full flex items-center p-2  bg-white text-black transition-colors duration-500 hover:bg-slate-200"
+                  to={`/${fruit}`}
                   onClick={() => {
                     setNavAnimation(true);
-                    setFruit("Banana");
+                    setActivePage(true)
                   }}
                 >
-                  Banana
+                  {fruit[0].toUpperCase()+fruit.slice(1)}
                 </NavLink>
-                <NavLink
-                  className="justify-center w-[100px] h-full flex items-center p-2  bg-white text-black transition-colors duration-500"
-                  to="/strawberry"
-                  onClick={() => {
-                    setNavAnimation(true);
-                    setFruit("Strawberry");
-                  }}
-                >
-                  Strawberry
-                </NavLink>
-                <NavLink
-                  className="justify-center w-[100px] h-full flex items-center p-2  bg-white text-black transition-colors duration-500"
-                  to="/blueberry"
-                  onClick={() => {
-                    setNavAnimation(true);
-                    setFruit("Blueberry");
-                  }}
-                >
-                  Blueberry
-                </NavLink>
+                )})}
               </ul>
             </div>
           </div>

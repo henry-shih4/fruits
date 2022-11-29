@@ -25,7 +25,7 @@ export default function Watermelon() {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="absolute -left-10 w-6 h-6 animate-flash bg-white"
+                    className="absolute -left-10 w-6 h-6 animate-flash bg-white -z-1"
                   >
                     <path
                       strokeLinecap="round"
