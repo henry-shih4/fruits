@@ -23,7 +23,7 @@ export default function Kiwi() {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="absolute -left-10 w-6 h-6 animate-flash bg-white"
+                    className="absolute -left-10 w-6 h-6 animate-flash bg-white -z-10"
                   >
                     <path
                       strokeLinecap="round"
@@ -31,7 +31,7 @@ export default function Kiwi() {
                       d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
                     />
                   </svg>
-                  <div className="h-[40px] w-[120px] flex justify-center items-center underline bg-kiwi rounded-lg text-white">
+                  <div className="h-[40px] w-[120px] flex justify-center items-center underline bg-kiwi rounded-lg text-white -z-10">
                     See Recipes
                   </div>
                 </div>

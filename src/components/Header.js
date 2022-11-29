@@ -45,8 +45,8 @@ export default function Header() {
 
   return (
     <>
-      <div className=" h-10">
-        <div className="w-full flex justify-start items-center relative z-1">
+      <div className="h-10">
+        <div className="w-full flex justify-start items-center relative">
           <div
             className={
               navAnimation
@@ -70,63 +70,65 @@ export default function Header() {
           >
             Home
           </NavLink>
-          <div className="relative">
-            <div
-              className={
-                activePage
-                  ? "justify-center w-[100px] h-full flex items-center p-2  bg-white text-black transition-colors duration-500"
-                  : "justify-center w-[100px]  p-2 h-full flex items-center text-white"
-              }
-              onClick={() => {
-                setShowList(true);
-              }}
-            >
-              {
-                <>
-                  <div className="flex justify-center items-center space-x-1 cursor-pointer">
-                    <div>Fruits</div>
-                    <div className="mt-1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        className="w-4 h-4 flex justify-center items-center"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                        />
-                      </svg>
+          <div
+           
+            onMouseLeave={() => {
+              setShowList(false);
+            }}
+          >
+            <div className="relative">
+              <div
+                className={
+                  activePage
+                    ? "justify-center w-[100px] h-full flex items-center p-2  bg-white text-black transition-colors duration-500"
+                    : "justify-center w-[100px]  p-2 h-full flex items-center text-white"
+                }
+                onClick={() => {
+                  setShowList(true);
+                }}
+              >
+                {
+                  <>
+                    <div className="flex justify-center items-center space-x-1 cursor-pointer">
+                      <div>Fruits</div>
+                      <div className="mt-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          className="w-4 h-4 flex justify-center items-center"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                          />
+                        </svg>
+                      </div>
                     </div>
-                  </div>
-                </>
-              }
-            </div>
-            <div
-              className={showList ? "absolute" : "absolute hidden"}
-              onMouseLeave={() => {
-                setShowList(false);
-              }}
-            >
-              <ul>
-                {fruits.map((fruit) => {
-                  return (
-                    <NavLink
-                      className="z-1 justify-center w-[100px] h-full flex items-center p-2  bg-white text-black transition-colors duration-300 hover:bg-slate-200"
-                      to={`/${fruit}`}
-                      onClick={() => {
-                        setNavAnimation(true);
-                        setActivePage(true);
-                      }}
-                    >
-                      {fruit[0].toUpperCase() + fruit.slice(1)}
-                    </NavLink>
-                  );
-                })}
-              </ul>
+                  </>
+                }
+              </div>
+              <div className={showList ? "absolute" : "absolute hidden"}>
+                <ul>
+                  {fruits.map((fruit) => {
+                    return (
+                      <NavLink
+                        className="relative justify-center w-[100px] h-full flex items-center p-2  bg-white text-black transition-colors duration-300 hover:bg-slate-200"
+                        to={`/${fruit}`}
+                        onClick={() => {
+                          setNavAnimation(true);
+                          setActivePage(true);
+                        }}
+                      >
+                        {fruit[0].toUpperCase() + fruit.slice(1)}
+                      </NavLink>
+                    );
+                  })}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
