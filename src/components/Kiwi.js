@@ -40,7 +40,7 @@ export default function Kiwi() {
           </div>
           <div className="p-2 min-h-[300px] row-span-2 col-start-2 lg:p-0">
             <img
-              className="h-[300px] md:h-[360px] lg:h-full w-full object-cover"
+              className="h-[300px] lg:h-full w-full object-cover"
               src="images/kiwi1.jpg"
               alt="kiwi-whole"
             />
@@ -72,7 +72,7 @@ export default function Kiwi() {
           </div>
           <div className="p-2 min-h-[300px] row-start-3 row-end-5 col-start-1 lg:p-0">
             <img
-              className="h-[300px] md:h-[360px] lg:h-full w-full object-cover"
+              className="h-[300px] lg:h-full w-full object-cover"
               src="images/kiwi2.jpg"
               alt="kiwi-slice"
             />
