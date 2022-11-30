@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Banana() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="h-[calc(100vh-40px)]">
@@ -15,7 +18,12 @@ export default function Banana() {
                     flesh enclosed in a soft usually yellow rind
                   </div>
                 </div>
-                <div className="relative flex justify-center items-center w-max">
+                <div
+                  className="relative flex justify-center items-center w-max cursor-pointer"
+                  onClick={() => {
+                    navigate("/recipes/bananas");
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -52,7 +60,7 @@ export default function Banana() {
                 </div>
                 <div className="flex flex-col justify-center items-center space-y-3">
                   <div>1 medium-sized banana (100 grams)</div>
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-4 whitespace-nowrap">
                     <ul>
                       <li>Calories: 89</li>
                       <li>Fat: 0.3g</li>

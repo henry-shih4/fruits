@@ -1,6 +1,7 @@
-import Header from "./Header";
+import { useNavigate } from "react-router-dom";
 
 export default function Watermelon() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="h-[calc(100vh-40px)]">
@@ -18,7 +19,12 @@ export default function Watermelon() {
                     to tropical Africa and cultivated around the world.
                   </div>
                 </div>
-                <div className="relative flex justify-center items-center w-max">
+                <div
+                  className="relative flex justify-center items-center w-max cursor-pointer"
+                  onClick={() => {
+                    navigate("/watermelon/recipes");
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

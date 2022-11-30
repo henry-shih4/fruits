@@ -8,15 +8,21 @@ import Kiwi from "./components/Kiwi";
 import Banana from "./components/Banana";
 import Strawberry from "./components/Strawberry";
 import Blueberry from "./components/Blueberry";
+import WatermelonRecipes from "./components/Recipes/WatermelonRecipes";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header  />
+        <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="watermelon" element={<Watermelon />}></Route>
+
+          <Route path="watermelon">
+            <Route index element={<Watermelon />} />
+            <Route path="recipes" element={<WatermelonRecipes />} />
+          </Route>
+
           <Route path="orange" element={<Orange />}></Route>
           <Route path="kiwi" element={<Kiwi />}></Route>
           <Route path="banana" element={<Banana />}></Route>

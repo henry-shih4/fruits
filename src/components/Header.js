@@ -10,10 +10,6 @@ export default function Header() {
   let location = useLocation();
 
   useEffect(() => {
-    console.log(showList);
-  });
-
-  useEffect(() => {
     if (location.pathname !== "/") {
       setActivePage(true);
     }
@@ -71,7 +67,6 @@ export default function Header() {
             Home
           </NavLink>
           <div
-           
             onMouseLeave={() => {
               setShowList(false);
             }}

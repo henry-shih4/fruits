@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Blueberry() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="h-[calc(100vh-40px)]">
@@ -15,7 +18,12 @@ export default function Blueberry() {
                     American plants (genus Vaccinium) of the heath family
                   </div>
                 </div>
-                <div className="relative flex justify-center items-center w-max">
+                <div
+                  className="relative flex justify-center items-center w-max"
+                  onClick={() => {
+                    navigate("/recipes/blueberries");
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -51,19 +59,18 @@ export default function Blueberry() {
                   Nutrition Info
                 </div>
                 <div className="flex flex-col justify-center items-center space-y-3">
-                  <div>One navel orange (140g)</div>
+                  <div>3.5-ounce (100-gram) serving of raw blueberries</div>
                   <div className="flex space-x-4">
                     <ul>
-                      <li>Calories: 73</li>
-                      <li>Fat: 0.2g</li>
-                      <li>Carbohydrates: 16.5g</li>
-                      <li>Fiber: 2.8g</li>
+                      <li>Calories: 57</li>
+                      <li>Fat: 0.3g</li>
+                      <li>Carbohydrates: 14.5g</li>
+                      <li>Fiber: 2.4g</li>
                     </ul>
                     <ul>
-                      <li>Sugars: 12g</li>
-                      <li>Protein: 1.3g</li>
-                      <li>Vitamin C: 82.7mg</li>
-                      <li>Potassium: 232mg</li>
+                      <li>Sugars: 10g</li>
+                      <li>Protein: 0.7g</li>
+                      <li>Water: 84%</li>
                     </ul>
                   </div>
                 </div>
