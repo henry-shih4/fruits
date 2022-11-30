@@ -2,12 +2,12 @@ export default function Banana() {
   return (
     <>
       <div className="h-[calc(100vh-40px)]">
-        <div className="lg:grid grid-cols-2 grid-rows-4 h-full">
+        <div className="md:grid grid-cols-2 grid-rows-4 h-full">
           <div className="h-[300px] lg:h-full row-start-1 row-end-3 col-start-1 ">
             <div className="h-full w-full flex flex-col justify-center items-center">
               <div className="w-3/4 h-full flex flex-col justify-center items-center space-y-3">
                 <div className="mb-4">
-                  <div className="flex justify-center items-center text-2xl">
+                  <div className="font-bold text-xl flex justify-center items-center md:text-2xl">
                     Banana
                   </div>
                   <div className="text-center">
@@ -37,40 +37,42 @@ export default function Banana() {
               </div>
             </div>
           </div>
-          <div className="p-2 min-h-[300px] row-span-2 col-start-2 lg:p-0">
+          <div className="p-2 min-h-[300px] row-span-2 col-start-2 md:p-0">
             <img
-              className=" h-[300px] lg:h-full w-full object-cover"
+              className=" h-[300px] md:h-full w-full object-cover"
               src="images/banana1.jpg"
               alt="bananas"
             />
           </div>
           <div className="row-span-2 col-start-2">
-            <div className="h-[300px] md:h-[360px] lg:h-full  w-full flex flex-col justify-center items-center">
+            <div className="h-[300px]  lg:h-full  w-full flex flex-col justify-center items-center">
               <div className="w-3/4 h-full flex flex-col justify-center items-center space-y-3">
-                <div className="text-2xl">Nutrition Info</div>
+                <div className="font-bold text-xl md:text-2xl">
+                  Nutrition Info
+                </div>
                 <div className="flex flex-col justify-center items-center space-y-3">
-                  <div>One navel orange (140g)</div>
+                  <div>1 medium-sized banana (100 grams)</div>
                   <div className="flex space-x-4">
                     <ul>
-                      <li>Calories: 73</li>
-                      <li>Fat: 0.2g</li>
-                      <li>Carbohydrates: 16.5g</li>
-                      <li>Fiber: 2.8g</li>
+                      <li>Calories: 89</li>
+                      <li>Fat: 0.3g</li>
+                      <li>Carbohydrates: 22.8g</li>
+                      <li>Fiber: 2.6g</li>
                     </ul>
                     <ul>
-                      <li>Sugars: 12g</li>
-                      <li>Protein: 1.3g</li>
-                      <li>Vitamin C: 82.7mg</li>
-                      <li>Potassium: 232mg</li>
+                      <li>Sugar: 12.2 grams</li>
+                      <li>Protein: 1g</li>
+                      <li>Water: 75%</li>
+                      <li>Potassium: 10% of the DV</li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="p-2 min-h-[300px] row-start-3 row-end-5 col-start-1 lg:p-0">
+          <div className="p-2 min-h-[300px] row-start-3 row-end-5 col-start-1 md:p-0">
             <img
-              className="h-[300px] lg:h-full w-full object-cover"
+              className="h-[300px] md:h-full w-full object-cover"
               src="images/banana2.jpg"
               alt="banana-open"
             />

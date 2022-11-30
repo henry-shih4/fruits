@@ -7,7 +7,7 @@ export default function Strawberry() {
             <div className="h-full w-full flex flex-col justify-center items-center">
               <div className="w-3/4 h-full flex flex-col justify-center items-center space-y-3">
                 <div className="mb-4">
-                  <div className="flex justify-center items-center text-2xl">
+                  <div className="text-xl font-bold flex justify-center items-center md:text-2xl">
                     Strawberry
                   </div>
                   <div className="text-center">
@@ -47,23 +47,24 @@ export default function Strawberry() {
             />
           </div>
           <div className="row-span-2 col-start-2">
-            <div className="h-[300px] md:h-[360px] lg:h-full  w-full flex flex-col justify-center items-center">
+            <div className="h-[300px] lg:h-full  w-full flex flex-col justify-center items-center">
               <div className="w-3/4 h-full flex flex-col justify-center items-center space-y-3">
-                <div className="text-2xl">Nutrition Info</div>
+                <div className="font-bold text-xl md:text-2xl">
+                  Nutrition Info
+                </div>
                 <div className="flex flex-col justify-center items-center space-y-3">
-                  <div>One navel orange (140g)</div>
+                  <div>3.5 ounces (100 grams) of raw strawberries</div>
                   <div className="flex space-x-4">
                     <ul>
-                      <li>Calories: 73</li>
-                      <li>Fat: 0.2g</li>
-                      <li>Carbohydrates: 16.5g</li>
-                      <li>Fiber: 2.8g</li>
+                      <li>Calories: 32</li>
+                      <li>Fat: 0.3g</li>
+                      <li>Carbohydrates: 7.7g</li>
+                      <li>Fiber: 2g</li>
                     </ul>
                     <ul>
-                      <li>Sugars: 12g</li>
-                      <li>Protein: 1.3g</li>
-                      <li>Vitamin C: 82.7mg</li>
-                      <li>Potassium: 232mg</li>
+                      <li>Sugars: 4.9g</li>
+                      <li>Protein: 0.7g</li>
+                      <li>Water: 91%</li>
                     </ul>
                   </div>
                 </div>
