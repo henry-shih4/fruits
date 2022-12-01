@@ -10,7 +10,7 @@ export default function Header() {
   let location = useLocation();
 
   useEffect(() => {
-    if (location.pathname !== "/") {
+    if (location.pathname !== "/" && location.pathname !== "/contact") {
       setActivePage(true);
     }
     if (location.pathname === "/watermelon") {
@@ -93,7 +93,7 @@ export default function Header() {
                           viewBox="0 0 24 24"
                           stroke-width="1.5"
                           stroke="currentColor"
-                          className="w-4 h-4 flex justify-center items-center"
+                          className="text-black w-4 h-4 flex justify-center items-center"
                         >
                           <path
                             stroke-linecap="round"
@@ -126,6 +126,19 @@ export default function Header() {
               </div>
             </div>
           </div>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "justify-center w-[100px] h-full flex items-center p-2 bg-white text-black transition-colors duration-500"
+                : "justify-center w-[100px]  p-2 h-full flex items-center"
+            }
+            to="/contact"
+            onClick={() => {
+              setActivePage(false);
+            }}
+          >
+            Contact
+          </NavLink>
         </div>
       </div>
     </>
