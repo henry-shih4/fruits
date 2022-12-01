@@ -26,7 +26,7 @@ export default function Header() {
     } else if (location.pathname === "/blueberry") {
       setBackground("bg-blueberry");
     } else {
-      setBackground("bg-slate-300");
+      setBackground("bg-orange-100");
     }
   }, [location.pathname]);
 
@@ -85,7 +85,7 @@ export default function Header() {
                 {
                   <>
                     <div className="flex justify-center items-center space-x-1 cursor-pointer">
-                      <div>Fruits</div>
+                      <div className="text-black">Fruits</div>
                       <div className="mt-1">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"

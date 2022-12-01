@@ -6,7 +6,7 @@ export default function Watermelon() {
     <>
       <div className="h-[calc(100vh-40px)]">
         <div className="md:grid grid-cols-2 grid-rows-4 h-full">
-          <div className="h-[300px] lg:h-full row-start-1 row-end-3 col-start-1 ">
+          <div className="h-[300px] md:h-full row-start-1 row-end-3 col-start-1 ">
             <div className="h-full w-full flex flex-col justify-center items-center">
               <div className="w-3/4 h-full flex flex-col justify-center items-center space-y-3">
                 <div className="mb-4">
@@ -19,8 +19,8 @@ export default function Watermelon() {
                     to tropical Africa and cultivated around the world.
                   </div>
                 </div>
-                <div
-                  className="relative flex justify-center items-center w-max cursor-pointer"
+                <button
+                  className="relative flex justify-center items-center w-max cursor-pointer btn"
                   onClick={() => {
                     navigate("/watermelon/recipes");
                   }}
@@ -31,7 +31,7 @@ export default function Watermelon() {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="absolute -left-10 w-6 h-6 animate-flash bg-white -z-10"
+                    className="absolute -left-10 w-6 h-6 animate-flash -z-10"
                   >
                     <path
                       strokeLinecap="round"
@@ -42,7 +42,7 @@ export default function Watermelon() {
                   <div className="h-[40px] w-[120px] flex justify-center items-center underline bg-watermelon rounded-lg text-white -z-10">
                     See Recipes
                   </div>
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@ export default function Watermelon() {
             />
           </div>
           <div className="row-span-2 col-start-2">
-            <div className="h-[300px]  lg:h-full  w-full flex flex-col justify-center items-center">
+            <div className="h-[300px]  md:h-full  w-full flex flex-col justify-center items-center">
               <div className="w-3/4 h-full flex flex-col justify-center items-center space-y-3">
                 <div className="font-bold text-xl md:text-2xl">
                   Nutrition Info

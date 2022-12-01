@@ -3,7 +3,7 @@ export default function Kiwi() {
     <>
       <div className="h-[calc(100vh-40px)]">
         <div className="md:grid grid-cols-2 grid-rows-4 h-full">
-          <div className="h-[300px] lg:h-full row-start-1 row-end-3 col-start-1 ">
+          <div className="h-[300px] md:h-full row-start-1 row-end-3 col-start-1 ">
             <div className="h-full w-full flex flex-col justify-center items-center">
               <div className="w-3/4 h-full flex flex-col justify-center items-center space-y-3">
                 <div className="mb-4">
@@ -48,7 +48,7 @@ export default function Kiwi() {
             />
           </div>
           <div className="row-span-2 col-start-2">
-            <div className="h-[300px] lg:h-full  w-full flex flex-col justify-center items-center">
+            <div className="h-[300px] md:h-full  w-full flex flex-col justify-center items-center">
               <div className="w-3/4 h-full flex flex-col justify-center items-center space-y-3">
                 <div className="font-bold text-xl md:text-2xl">
                   Nutrition Info
