@@ -18,10 +18,10 @@ module.exports = {
           },
 
           "100%": {
-            transform: "translateX:(0)",
+            transform: "translateX(0)",
           },
         },
-        flash: {
+        sideToSide: {
           "0%": {
             transform: "translate(-100%)",
           },
@@ -33,8 +33,8 @@ module.exports = {
         },
       },
       animation: {
+        hBounce: "sideToSide 2.4s infinite linear",
         backgroundSlide: "slideIn 1.2s linear",
-        flash: "flash 2.4s linear infinite",
       },
     },
   },

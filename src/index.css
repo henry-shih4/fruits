@@ -4,6 +4,6 @@
 
 @layer components {
     .btn {
-        @apply hover:scale-110 transition-all duration-150 
+        @apply hover:scale-110 transition-all duration-150; 
     }
 }

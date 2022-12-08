@@ -24,7 +24,7 @@ export default function Strawberry() {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="absolute -left-10 w-6 h-6 animate-flash bg-white -z-10"
+                    className="absolute -left-10 w-6 h-6 animate-hBounce bg-white -z-10"
                   >
                     <path
                       strokeLinecap="round"
