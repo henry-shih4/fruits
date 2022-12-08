@@ -1,7 +1,4 @@
-import { useNavigate } from "react-router-dom";
-
 export default function Watermelon() {
-  const navigate = useNavigate();
   return (
     <>
       <div className="h-[calc(100vh-40px)]">
@@ -19,12 +16,7 @@ export default function Watermelon() {
                     to tropical Africa and cultivated around the world.
                   </div>
                 </div>
-                <button
-                  className="relative flex justify-center items-center w-max cursor-pointer btn"
-                  onClick={() => {
-                    navigate("/watermelon/recipes");
-                  }}
-                >
+                <button className="relative flex justify-center items-center w-max cursor-pointer btn">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
