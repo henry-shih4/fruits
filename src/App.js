@@ -9,6 +9,7 @@ import Banana from "./components/Banana";
 import Strawberry from "./components/Strawberry";
 import Blueberry from "./components/Blueberry";
 import WatermelonRecipes from "./components/Recipes/WatermelonRecipes";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="banana" element={<Banana />}></Route>
           <Route path="strawberry" element={<Strawberry />}></Route>
           <Route path="blueberry" element={<Blueberry />}></Route>
+          <Route path="contact" element={<Contact />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
